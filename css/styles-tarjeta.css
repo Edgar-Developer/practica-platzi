@@ -95,3 +95,11 @@ button:active{
   background: white;
   color: black;
 }
+@media (max-width: 600px) {
+  html{
+    background-image: url(https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=600);
+  }
+  section button{
+    color: red;
+  }
+}

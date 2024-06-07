@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    background-image: url(https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+section{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+div{
+    display: flex;
+}
+button{
+    width: 65px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 20px;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border: 2px solido black;
+    margin: -1px;
+    padding: 10px;
+    z-index: 1;
+}
+button:nth-child(2n + 2){
+    background-color: black;
+    color: white;
+    width: 50px;
+    height: 250px;
+    margin-left: -25px;
+    margin-right: -25px;
+    z-index: 2;
+}
+button:hover{
+    background-color: red;
+}
+button:active{
+    background-color: blue;
+}
+button:nth-child(2n + 2):hover{
+    background-color: aqua;
+}
+button:nth-child(2n + 2):active{
+    background-color: chartreuse;
+}
+
