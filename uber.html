@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fontawesome/fontawesome-free-6.5.2-web/css/all.css">
+  <title>Document</title>
+  <style>
+    :root{
+      --white: #FFFFFF;
+      --black: #000000;
+      --green: #32933d;
+      --greensub: #B3E2A7;
+      --grenlogo: #C3FF93;
+      --text-input-field: #A7E6FF;
+      --hospital-green: #ACD9B2;
+      --sm: 14px;
+      --md: 16px;
+      --lg: 18px
+    }     
+    body {
+      box-sizing: border-box;
+      background-color: var(--black);
+      margin: 0;
+    }
+    .contenedor-inicio {
+      display: flex; 
+    }
+    .conteiner-uber .logo-primero img {  
+      margin: 20px;
+      width: 8%;
+    }
+    .conteiner-uber .tienes-cuenta a {
+      display: inline-block;
+      margin: 20px;
+      background-color: var(--white);
+      font-weight: 400;
+      color: var(--black);
+      text-decoration: none;
+      border-radius: 20px;
+      padding: 10px;
+    }
+    .conteiner-uber .title {
+      color: var(--white);
+      display: flex;
+      margin-top: 100px;
+    }
+    .title h1 {
+      padding: 0 100px 0 100px;
+      font-size: 60px;
+      font-weight: bold;
+      text-align: left;
+    }
+    .title p {
+      padding: 0 100px 0 100px;
+      font-size: 20px;
+      text-align: left;
+    }
+    .title img {
+       justify-content: center;
+    }
+    .registro {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 200px;
+      background-color: var(--white);
+    }
+    .registro a {
+      text-decoration: none;
+      color: var(--black);
+      font-weight: bold;
+      font-size: 40px;
+      padding: 24px 24px 24px 0;
+      border-bottom: 1px solid var(--black);
+    }
+    .registro a .fa-solid {
+      margin-left: 150px;
+      transition: all 300ms;
+    }
+    .registro a .fa-solid:hover {
+      transform: scale(1.35);
+    }
+    h2 {
+      color: var(--white);
+      font-size: var(--lg);
+      margin: 0 0 108px 108px;
+    }
+    .informacion-adicional ul li {
+      padding: 0;
+      color: var(--white);
+      font-weight: 700;
+      font-size: var(--lg);
+      list-style: none;
+      margin-bottom: 16px;
+    }
+    .informacion-adicional {
+      display: grid;
+      place-content: center;
+      grid-template-columns: repeat(auto-fill, 240px);                  
+    }
+    .informacion-adicional a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: var(--sm);
+      font-weight: 200;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+    .icons {
+      display: flex;  
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+    .icons a {        
+      text-decoration: none;
+    }
+    .fa-facebook, .fa-linkedin{
+      color:blue;
+    }
+    .fa-x-twitter {
+      color: var(--white);
+    }
+    .fa-youtube {
+      color: red;
+    }
+    .fa-instagram {
+      color: orange;
+    }
+    .fa-facebook:hover,
+    .fa-instagram:hover,
+    .fa-linkedin:hover,
+    .fa-x-twitter:hover,
+    .fa-youtube:hover {
+      color:var(--greensub)
+    }
+  </style> 
+</head>
+<body>
+    <section class="conteiner-uber">
+      <div class="contenedor-inicio">
+        <div class="logo-primero">
+          <a href="/"><img src="./logos/uber_logo.jpg" alt="logo"></a>
+        </div>
+        <div class="tienes-cuenta">
+          <a href="/">¿Ya tienes una cuenta?</a>
+        </div>
+      </div>
+      <div class="title">
+        <div>        
+          <h1>Prepárate para conducir con la app de Uber</h1>
+          <p>Conduce con la app de Uber. Genera ganancias a tu ritmo.</p>
+        </div>
+        <div class="imagen-conductor">
+          <img src="./logos/Screenshot_3.png" alt="dibujo-conductor">
+        </div>
+      </div>
+      <div class="registro">
+        <a href="/">Registrate <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="/">Inicia sesión <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="logo-primero">
+        <a href="/"><img src="./logos/uber_logo.jpg" alt="logo"></a>
+      </div>
+      <div>
+        <h2>Visita el Centro de ayuda</h2>
+      </div>
+      <div>
+        <form action="/" class="informacion-adicional">
+          <ul>
+            <li>Compañia</li>
+            <li>
+              <a href="">Quiénes somos</a>
+            </li>
+            <li>
+              <a href="">Lo que ofrecemos</a>
+            </li>
+            <li>
+              <a href="">Sala de prensa</a>
+            </li>
+            <li>
+              <a href="">Inversionistas</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">Carrera</a>
+            </li>
+            <li>
+              <a href="">AI</a>
+            </li>
+            <li>
+              <a href="">Tarjetas de regalo</a>
+            </li>          
+          </ul>
+          <ul>
+            <li>Productos</li>
+            <li>
+              <a href="">Viaje</a>
+            </li>
+            <li>
+              <a href="">Conducir</a>
+            </li>
+            <li>
+              <a href="">Comida</a>
+            </li>
+            <li>
+              <a href="">Uber para Empresas</a>
+            </li>
+            <li>
+              <a href="">Uber Freingt</a>
+            </li>                    
+          </ul>
+          <ul>
+            <li>Ciudadaía global</li>
+            <li>
+              <a href="">Segurridad</a>
+            </li>
+            <li>
+              <a href="">Diversidad e inclusion</a>
+            </li>
+            <li>
+              <a href="">Sustentabilidad</a>
+            </li>                          
+          </ul>
+          <ul>
+            <li>Viajes</li>
+            <li>
+              <a href="">Reserva</a>
+            </li>
+            <li>
+              <a href="">Aeropuertos</a>
+            </li>
+            <li>
+              <a href="">Ciudades</a>
+            </li>                          
+          </ul>
+        </form>
+      </div>
+      <div class="icons">
+        <a href="/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="/"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="/"><i class="fa-brands fa-youtube"></i></a>
+        <a href="/"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </section>
+</body>
+</html>
