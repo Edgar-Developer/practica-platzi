@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+      :root{
+        --red:#c71515;
+        --white: #FFFFFF;
+        --black: #000000;
+        --green: #32933d;
+        --greensub: #B3E2A7;
+        --grenlogo: #C3FF93;
+        --text-input-field: #A7E6FF;
+        --hospital-green: #ACD9B2;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px
+      } 
+      html {
+        background-color: var(--black);
+      } 
+      body {
+        margin: 0;
+        font-family: "Quicksand", sans-serif
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 24px;
+        border-bottom: 1px solid var(--text-input-field);
+      }
+      .nav-bar-left img {
+        background-color: var(--text-input-field);
+        border-radius: 18px;
+      }
+      nav .menu {
+        background-color: var(--text-input-field);
+        width: 5vh;
+        height: 38px;
+        margin-top: 10px;
+      }
+      .menu {
+        display: none;
+      }
+      .logo {
+        width: 120px;        
+      }
+      .nav-bar-left {
+        display: flex;
+      }
+      .nav-bar-left ul {
+        margin-left: 24px;
+      }
+      .nav-bar-left ul,
+      .nav-bar-right ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        height: 60px;
+      }
+      .nav-bar-left ul li,
+      .nav-bar-right ul li {
+        margin: 0 12px;
+      }
+      .nav-bar-left ul li a,
+      .nav-bar-right ul li a {
+        text-decoration: none;
+        color: var(--green);
+        padding: 8px;
+        border-radius: 8px;
+      }
+      .nav-bar-left ul li a:hover,
+      .nav-bar-right ul li a:hover {
+        color: var(--white);
+        border: 1px solid var(--white);
+        background-color: var(--green);                      
+      }
+      .nav-bar-email {
+        color: var(--green);
+        font-size: var(--sm);
+      }
+      .nav-bar-email img {
+        margin-left: 10px;
+        transform: rotate(90deg);
+      }
+      .shooping-cart {
+        position: relative;
+        margin-left: 8px;
+      }
+      .shooping-cart img {
+        background-color: var(--text-input-field);
+        border-radius: 6px;
+      }
+      .shooping-cart div {
+        position: absolute;
+        top: -7px;
+        right: -7px;
+        text-align: center;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: var(--red);
+        font-size: var(--sm);
+        font-weight: bold;
+      }
+      @media (max-width: 640px) {
+        .menu {
+        display: block;
+      } 
+      .nav-bar-left ul {
+        display: none;
+      }
+      .nav-bar-email {
+        display: none;
+      }
+
+      }
+    </style>
+</head>
+<body>
+    <nav>
+      <img src="./icons/icon_menu.svg" alt="menu" class="menu">
+      <div class="nav-bar-left">
+        <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
+        <ul>
+          <li>
+            <a href="/">All</a>
+          </li>
+          <li>
+            <a href="/">Clothes</a>
+          </li>
+          <li>
+            <a href="/">Electronics</a>
+          </li>
+          <li>
+            <a href="/">Furnitures</a>
+          </li>
+          <li>
+            <a href="/">Toys</a>
+          </li>
+          <li>
+            <a href="/">Others</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-bar-right">
+        <ul>
+          <li class="nav-bar-email">Email@contenido.com
+            <img src="./icons/flechita.svg" alt="flechita">
+          </li>
+          <li class="shooping-cart">
+            <img src="./icons/icon_shopping_cart.svg" alt="shooping-cart">
+            <div>2</div> 
+          </li>
+        </ul>
+      </div>
+    </nav>
+</body>
+</html>
