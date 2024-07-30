@@ -1,13 +1,21 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 html{
     background-image: url(https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg?auto=compress&cs=tinysrgb&w=600);
 }
-section{
+.contenedor-principal {
     display: flex;
     justify-content: center;
-    margin-top: 15%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.contenedor-principal section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
 }
 div{
     display: flex;
@@ -46,5 +54,34 @@ button:nth-child(2n + 2):hover{
 }
 button:nth-child(2n + 2):active{
     background-color: chartreuse;
+}
+@media (max-width: 1365px) {
+    .contenedor-principal {
+        flex-wrap: wrap;
+    }
+    .contenedor-principal section {
+        margin-top: 12%;
+    }
+}
+@media (max-width: 910px) {
+    .contenedor-principal {
+        flex-wrap:nowrap;
+        transform: rotate(90deg);
+        position: absolute;
+        bottom: 146px;
+        left: 90px;
+    } 
+    .contenedor-principal section {
+        display: flex;
+        margin-top: 34%;
+    }
+    button{
+        width: 50px;         
+        font-size: 18px;       
+    }
+    button:nth-child(2n + 2){        
+        width: 48px;
+        height: 216px;
+    }
 }
 
