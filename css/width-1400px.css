@@ -6,6 +6,10 @@ body {
       transform: rotate(90deg);
       justify-content: space-evenly; 
 }
+.contenedor-principal section {
+      position: absolute;
+      top: 28%;
+}
 button{
       width: 48px;
       height: 326px; 
