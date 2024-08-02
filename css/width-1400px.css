@@ -1,0 +1,20 @@
+@media (max-width: 1400px) {
+body {
+      height: 122vh;
+}
+.contenedor-principal {
+      transform: rotate(90deg);
+      justify-content: space-evenly; 
+}
+button{
+      width: 48px;
+      height: 326px; 
+      font-size: 16px;    
+}
+  button:nth-child(2n + 2){
+      height: 176px;
+      width: 40px;
+      margin-left: -20px;
+      margin-right: -20px;
+}
+}
