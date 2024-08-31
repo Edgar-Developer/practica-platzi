@@ -1,15 +1,10 @@
-@media (max-width: 1400px) {
-body {
-      height: 122vh;
-}
+@media (max-width: 980px) {
+
 .contenedor-principal {
       transform: rotate(90deg);
-      justify-content: space-evenly; 
+      width: 100vw;
 }
-.contenedor-principal section {
-      position: absolute;
-      top: 28%;
-}
+
 button{
       width: 48px;
       height: 326px; 
